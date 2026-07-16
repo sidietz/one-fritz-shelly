@@ -23,13 +23,18 @@ FRITZ_IP = '192.168.168.1'
 FRITZ_USER = 'SimonDietz'
 
 FRITZ_PW = ""
-with open('pw.txt', 'r') as file:
-    FRITZ_PW = file.read().strip()
+try:
+    with open('pw.txt', 'r') as file:
+        FRITZ_PW = file.read().strip()
+except:
+    FRITZ_PW = ""
 
 FRITZ_BASE_AIN = ""
-with open('ain.txt', 'r') as file:
-    FRITZ_BASE_AIN = file.read().strip()
-
+try:
+    with open('ain.txt', 'r') as file:
+        FRITZ_BASE_AIN = file.read().strip()
+except Exception:
+    FRITZ_BASE_AIN = ""
 
 LISTEN_PORT = 80
 
