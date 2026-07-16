@@ -31,7 +31,7 @@ with open('ain.txt', 'r') as file:
     FRITZ_BASE_AIN = file.read().strip()
 
 
-LISTEN_PORT = 1010
+LISTEN_PORT = 80
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
