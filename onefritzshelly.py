@@ -26,7 +26,7 @@ FRITZ_PW = ""
 try:
     with open('pw.txt', 'r') as file:
         FRITZ_PW = file.read().strip()
-except:
+except Exception:
     FRITZ_PW = ""
 
 FRITZ_BASE_AIN = ""
